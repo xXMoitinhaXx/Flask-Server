@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="header">
+        <a href="/login" class="normal_button">Log In</a>
+    </div>
+
+    <h1>xXMoitinhaXx's server sign in</h1>
+    <div class="login_and_signin_form">
+        <form action="/signin" method="post">
+            <label for="name">Enter your username:</label>
+                <input type="text" id="name" name="name" placeholder="Exemple name" requicrimson>
+
+            <label for="email">Enter your Email:</label>
+                <input type="email" id="email" name="email" placeholder="Exemple_email@gmail.com">
+            
+            <label for="password">Enter your password:</label>
+                <input type="password" id="password" name="password" placeholder="Exemple password" requicrimson>
+
+            <h4>{{ acontecimento }}</h4>
+
+            <button type="submit">Submit</button>
+
+            
+        </form>
+    </div>
+    
+{% endblock %}

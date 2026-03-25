@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xXMoitinhaXx's Server</title>
+    <style>
+        body {
+            font-family: 'Trebuchet MS', sans-serif;
+            margin: 10px 10px;
+            padding: 20px;
+            background-color: black;
+            color: crimson;
+        }
+
+        .header {
+            display: flex;
+            justify-content: right;
+            align-items: center;
+
+        }
+
+        button {
+            background-color: crimson;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            margin-left: 15px;
+            text-align: center;
+        }
+
+        .normal_button {
+            background-color: crimson;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            cursor: pointer;
+            margin-left: 15px;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        .header_button:hover {
+            scale: 108%;
+        }
+        
+        .container-about {
+            display: flex;  
+            margin-top: 5%;         
+        }
+
+
+        .foto-perfil {
+            width:60%;            
+            height: auto;
+            border-radius: 10px;    
+            box-shadow: 0 0 400px #eb12ff;
+        }
+
+       .foto-perfil:hover {
+            scale: 104%;
+        }
+
+        .aboute_me_text_area {
+            text-align: left;
+            color: white;
+            flex: 1;      
+     
+        }
+        label {
+            text-align: left;
+            
+        }
+        form {
+            text-align: flex;
+            padding: 15px;
+            margin-top: 25px;
+        }
+        .login_and_signin_form {
+            text-align: center;
+            justify-items: center;
+            box-shadow: 0 0 200px red;
+            margin-left: 30%;
+            margin-right: 30%;
+            border-radius: 20px;
+        }
+        input {
+            width: 100%;
+            margin-bottom: 15px;
+            background-color: black;
+            border-radius: 5px;
+            padding: 4px;
+            border: none;
+            text-align: left;
+            color: white; 
+        }
+
+    </style>
+</head>
+<body>
+    {% block content %}
+
+    {% endblock %}
+</body>

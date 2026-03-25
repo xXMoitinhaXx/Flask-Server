@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="header">
+        <a href="/" class="normal_button">Home</a>
+        <a href="/logout" class="normal_button"> Log Out - {{ user }}</a>
+    </div>
+
+    
+    <h1>Welcome! <br> xXMoitinhaXx's Server</h1>
+    
+    <div class="container-about">
+        
+
+        <div class="aboute_me_text_area">
+            <h3>
+                <br>
+                &nbsp; Hello, my name is xXMoitinhaXx, ofc, not the real name. <br>
+                &nbsp; This is my first server, I am learning flask to make it, for now, I guess it's enough.<br>
+                &nbsp; I'm -18, I'm still in school and I really like what I am doing.<br>
+                &nbsp; If u are reading this, suggest things to make this server better!
+                <form action="/Addtips" method="post">
+                        <input type="text" id="tip" name= "tip"placeholder="What things I should add to my server?">
+                    
+                    <button type="submit">Submit</button>
+
+                </form>
+            </h3>
+        </div>
+        <img src="/static/imgs/PFP_ABOUT_ME.jpg" alt="Profile picture" class="foto-perfil">
+    </div>
+{% endblock %}
