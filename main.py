@@ -181,11 +181,4 @@ def update_tips(id, tip):
 
     
 
-if __name__ == "__main__": # Mantem o server de pé
-    app.run(host="0.0.0.0", port=8000, debug=True)
-
-"""
-TO DO LIST:
-    - Fazer uma main page melhor
-
-"""
+app.run(host="0.0.0.0", port=8000, debug=True)
